@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Collection Flask Restful",
+		"_postman_id": "ec61222c-9f2d-b0cc-13cb-7a41e315d7e2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Request - Unique",
+			"request": {
+				"url": "http://127.0.0.1:5000/SHIB",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Perform the Get request"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Request",
+			"request": {
+				"url": "http://127.0.0.1:5000",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"GALA\": \"Gala\",\n    \"FITFI\": \"Step App\",\n    \"THG\": \"Thetan Arena\"\n}"
+				},
+				"description": "Perform the Post request"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Request",
+			"request": {
+				"url": "http://127.0.0.1:5000/SHIB",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n    \"SHIB\": \"Shiba Inu Update Test\" \n    \n}"
+				},
+				"description": "Perform the Put request"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Request",
+			"request": {
+				"url": "http://127.0.0.1:5000/RACA",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Perform the Delete request"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request - All",
+			"request": {
+				"url": "http://127.0.0.1:5000",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Perform the Get request"
+			},
+			"response": []
+		}
+	]
+}
