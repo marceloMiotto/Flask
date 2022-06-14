@@ -11,11 +11,20 @@ altcoins = {"BabyDoge": "Baby Doge Coin",
 
 class Altcoin(Resource):
 
-    def get(self):
+    def get(self, token_id: int = None):
+        return altcoins
+
+    def post(self):
+        return altcoins
+
+    def put(self, token_id: int):
+        return altcoins
+
+    def delete(self, token_id: int):
         return altcoins
 
 
-api.add_resource(Altcoin, "/")
+api.add_resource(Altcoin, "/", "/<token_id>")
 
 
 if __name__ == '__main__':
