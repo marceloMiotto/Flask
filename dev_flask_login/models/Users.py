@@ -1,4 +1,4 @@
-from falsk_login import UserMixin
+from flask_login import UserMixin
 
 class Users(UserMixin):
 
